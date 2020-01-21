@@ -1,0 +1,29 @@
+min_trimmed_length = 2
+min_word_count = 1
+max_word_count = 14
+min_characters = 3
+may_end_with_colon = false
+quote_start_with_letter = true
+needs_punctuation_end = false
+needs_letter_start = true
+needs_uppercase_start = true
+broken_whitespace = ["  ", " ,", " .", " ?", " !", " ;", " :", "( ", " )"]
+allowed_symbols_regex = "[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ ,.?!:\\-–—\"'„“”\\(\\)]"
+
+replacements = [
+  ["p.n.e.", "przed naszą erą"],
+  ["n.e.", "naszej ery"],
+  ["n.p.m.", "nad poziomem morza"],
+  ["n.p.", "na przykład"],
+  ["tj.", "to jest"]
+]
+
+abbreviation_patterns = [
+  "[A-ZĄĆĘŁŃÓŚŻŹ]{2,}",
+  "(?i)(^| )[a-ząćęłńóśżź]{1,2}\\. ", # 1 & 2-letter abbrevations
+  "(?i)([a-ząćęłńóśżź]+\\.)+([a-ząćęłńóśżź]+\\.)", # m.in. / shortened names / A.B.C. etc.
+  # 3+ letter abbreviations ending with period
+  "(?i)(etc|itd|m\\.in|cdn|itd|itp|lek|lic|str|tzn|tzw|zob|płd|płn|wsch|zach|prof|inż|godz|tel)\\.",
+  # Abbbrevations without a period
+  "(?i) (bp|dr|nr|mgr|mjr|płk|wg|dra)\\.? "
+]
