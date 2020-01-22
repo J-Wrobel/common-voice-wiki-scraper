@@ -21,8 +21,6 @@ replacements = [
 abbreviation_patterns = [
   "[A-ZĄĆĘŁŃÓŚŻŹ]{2,}",
   "(?i)[a-ząćęłńóśżź]\\. ?[a-ząćęłńóśżź]",
-  # 3+ letter abbreviations ending with period
-  "(?i)(etc|itd|m\\.in|cdn|itd|itp|lek|lic|str|tzn|tzw|zob|płd|płn|wsch|zach|prof|inż|godz|tel)\\.",
   # Abbrevations without a period
   "(?i) (bp|dr|nr|mgr|mjr|płk|wg|dra)\\.? "
 ]
