@@ -1,5 +1,5 @@
 min_trimmed_length = 2
-min_word_count = 1
+min_word_count = 3
 max_word_count = 14
 min_characters = 3
 may_end_with_colon = false
@@ -8,7 +8,7 @@ needs_punctuation_end = false
 needs_letter_start = true
 needs_uppercase_start = true
 broken_whitespace = ["  ", " ,", " .", " ?", " !", " ;", " :", "( ", " )"]
-allowed_symbols_regex = "[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ ,.?!:\\-–—\"'„“”\\(\\)]"
+allowed_symbols_regex = "[a-ząćęłńóśżźA-ZĄĆĘŁŃÓŚŻŹ ,.?!:\\-–—\"'„“”]"
 
 abbreviation_patterns = [
   "[A-ZĄĆĘŁŃÓŚŻŹ]{2,}",
